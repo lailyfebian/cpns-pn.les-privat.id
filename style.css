@@ -3042,8 +3042,8 @@ button,
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover top;
-    object-position: center;
+    object-fit: cover;
+    object-position: center top;
 }
 
 /* IMAGE CAPTION */
@@ -6026,8 +6026,8 @@ button,
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover top;
-    object-position: center;
+    object-fit: cover;
+    object-position: center top;
 }
 
 /* CONTENT */
