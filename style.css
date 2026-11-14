@@ -240,10 +240,9 @@ button,
 /* MOBILE */
 @media (max-width: 767px) {
     .header-beranda {
-        padding: 45px 0 50px;
+        padding: 45px 0 80px !important;
         border-radius: 0 0 15px 15px;
     }
-
     .header-beranda h1 {
         padding-top: 10px;
         margin-bottom: 18px !important;
@@ -282,7 +281,6 @@ button,
         font-size: 11px;
     }
 }
-
 
 /* ==============================
    PRODUK PRIVAT NUSANTARA
@@ -548,7 +546,7 @@ button,
     .produk-card h3 {
         margin-bottom: 9px;
         font-size: 15px !important;
-        text-align: left;
+        text-align: center;
     }
 
     .produk-image {
@@ -660,6 +658,7 @@ button,
 /* Akhir Section CTA */
 
 
+
 /* ==========================================
    KEUNGGULAN / STATISTIK
 ========================================== */
@@ -678,34 +677,56 @@ button,
     max-width: 1200px;
 }
 
-.keunggulan .container .count {
-    background-color: #F5C542;
-    padding: 22px 30px;
-    border-radius: 18px;
-    position: relative;
+.keunggulan .count {
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    gap: 15px;
+
+    padding: 24px 30px;
+    background-color: #F5C542;
+    border-radius: 18px;
+
     color: #075333;
     text-align: center;
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 10px;
 
     box-shadow: 0 8px 25px rgba(6, 67, 41, 0.10);
 }
 
-.keunggulan .container .count > div {
-    flex: 1 1 0;
+.keunggulan .count-item {
     min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.keunggulan .container .count span {
+/* ANGKA DAN SIMBOL */
+
+.keunggulan .angka-wrapper {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: baseline;
+    justify-content: center;
+    white-space: nowrap;
+    width: auto;
+    gap: 0;
+}
+
+.keunggulan .angka-wrapper span {
+    display: inline-block !important;
+    width: auto !important;
+    float: none !important;
+    white-space: nowrap !important;
     font-size: 38px;
     font-weight: 800;
+    line-height: 1.2;
+    color: #075333;
 }
 
-.keunggulan .container .count p {
+.keunggulan .count-item p {
     margin: 8px 0 0;
     color: #064329;
     font-size: 13px;
@@ -724,16 +745,16 @@ button,
         margin-top: -40px;
     }
 
-    .keunggulan .container .count {
-        padding: 18px 12px;
-        gap: 5px;
+    .keunggulan .count {
+        gap: 10px;
+        padding: 20px 15px;
     }
 
-    .keunggulan .container .count span {
+    .keunggulan .angka-wrapper span {
         font-size: 30px;
     }
 
-    .keunggulan .container .count p {
+    .keunggulan .count-item p {
         font-size: 11px;
     }
 }
@@ -748,7 +769,7 @@ button,
     .keunggulan {
         padding-left: 15px;
         padding-right: 15px;
-        margin-top: -30px;
+        margin-top: -60px;
         padding-bottom: 20px;
     }
 
@@ -757,31 +778,22 @@ button,
         padding-right: 0;
     }
 
-    .keunggulan .container .count {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
+    .keunggulan .count {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px 8px;
 
-        padding: 15px 5px;
-        gap: 2px;
+        padding: 18px 12px;
         border-radius: 14px;
     }
 
-    .keunggulan .container .count > div {
-        flex: 1 1 0;
-        min-width: 0;
+    .keunggulan .angka-wrapper span {
+        font-size: 21px;
     }
 
-    .keunggulan .container .count span {
-        font-size: 20px;
-    }
-
-    .keunggulan .container .count p {
+    .keunggulan .count-item p {
         margin-top: 5px;
-        font-size: 9px;
-        line-height: 1.35;
+        font-size: 10px;
+        line-height: 1.4;
     }
 }
 
@@ -798,20 +810,19 @@ button,
         margin-top: -25px;
     }
 
-    .keunggulan .container .count {
-        padding: 13px 3px;
+    .keunggulan .count {
+        gap: 15px 5px;
+        padding: 15px 8px;
     }
 
-    .keunggulan .container .count span {
-        font-size: 17px;
+    .keunggulan .angka-wrapper span {
+        font-size: 19px;
     }
 
-    .keunggulan .container .count p {
-        font-size: 8px;
+    .keunggulan .count-item p {
+        font-size: 9px;
     }
 }
-
-
 
 
 
