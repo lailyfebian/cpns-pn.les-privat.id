@@ -240,7 +240,7 @@ button,
 /* MOBILE */
 @media (max-width: 767px) {
     .header-beranda {
-        padding: 45px 0 70px !important;
+        padding: 45px 0 50px !important;
         border-radius: 0 0 15px 15px;
     }
     .header-beranda h1 {
